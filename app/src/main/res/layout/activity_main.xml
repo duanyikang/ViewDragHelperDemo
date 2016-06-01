@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="去解锁了，自己写回掉"
+        android:layout_gravity="bottom|center"/>
+
+    <com.guoguoquan.viewdraghelperdemo.View.MainLockViewGroup
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:id="@+id/rl_main_lockly"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#00CCFF">
+
+
+
+            <Button
+                android:id="@+id/bt_bottom_menu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|bottom"
+                android:text="底部菜单" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#FF0000" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是底部小菜单"
+                android:layout_gravity="center"/>
+            </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="#09F738" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FF00FF" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是右侧小菜单"
+                android:layout_gravity="center"/>
+            </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="#FF0066" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="我是左侧小菜单"
+                android:layout_gravity="center"/>
+            </FrameLayout>
+    </com.guoguoquan.viewdraghelperdemo.View.MainLockViewGroup>
+
+</FrameLayout>
